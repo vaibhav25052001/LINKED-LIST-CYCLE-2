@@ -1,0 +1,11 @@
+        map<ListNode*,bool>m;
+        ListNode *temp=head;
+        while(temp){
+            if(m[temp]==true)
+            return temp;
+
+            m[temp]=true;
+
+            temp=temp->next;
+        }
+         return NULL;
